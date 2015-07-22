@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="js/ira.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="/css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<h1>Calculador de IRA</h1>
+	<h2>IRA total = <span id="nbr_ira">0.0</span></h2>
+	<form action="">
+		Nome: 	<input type="text" name="nome" id="nome"> <br/>
+		Nota: 	<input type="number" min="0" max="10" name="" id="nota"> <br>
+		Semestre: <input type="number" min="1" max="15" value="1" id="semestre">  <br>
+		Carga: <input type="number" id="carga" value="32"> <br>
+		Trancada:
+		<input type="checkbox" name="trancada" id="trancada"> <br>
+		<input type="button" value="Adicionar" onclick="addDisciplina()">
+	</form>
+	<table id="table_disc">
+		<tr>
+			<td>Nome</td>
+			<td>Semestre</td>
+			<td>Carga</td>
+			<td>Nota</td>
+			<td>Trancada</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+	"name": "ira_calculator",
+	"main": "app://host/src/app/index.html",
+	"window": {
+		"toolbar" : false,
+		"width":	800,
+		"height": 600,
+		"title": "Calculador de IRA"
+	}
+}
