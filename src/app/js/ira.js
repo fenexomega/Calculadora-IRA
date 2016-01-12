@@ -4,7 +4,7 @@ function loadJson(name)
 {
 	if(fs.existsSync(name))
 		return JSON.parse(fs.readFileSync(name,'utf8'))
-	return { trancadas: [], completas: []};
+	return { trancadas: [], completas: [], simuladas: []};
 }
 
 function saveJson(name,json)
@@ -45,4 +45,4 @@ function calcIra(obj)
 	return coefTrancamento*(A1/B1)
 }
 
-var x =calcIra(loadJson("modelo.json"))
+var x = calcIra(loadJson("modelo.json"))

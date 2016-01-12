@@ -33,6 +33,10 @@ function addRow(obj)
 	l[1].textContent = obj.semestre 
 	l[2].textContent = obj.carga 
 	l[3].textContent = obj.nota 
+	if(disc.trancadas.indexOf(obj) != -1)
+		l[4].textContent = true
+	else
+		l[4].textContent = false
 }
 
 function atualizarIra()
